@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Grupo Fofurinhas" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="Site desenvolvido com o intuito de explicar sobre o ecossistema GIT" />
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>Git</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="#controleDeVersao">O que é controle de versão? </a>
+        </li>
+        <li>
+          <a href="#git">O que é o Git?</a>
+        </li>
+        <li>
+          <a href="#gitHub">O que é GitHub?</a>
+        </li>
+        <li>
+          <a href="#gitLab">O que é GitLab?</a>
+        </li>
+        <li>
+          <a href="#criarConta">Como criar conta no GitHub?</a>
+        </li>
+        <li>
+          <a href="#gitInstalacaoLinux">Como instalar o GIT no Linux</a>
+        </li>
+        <li>
+          <a href="#gitLab">Guia de instalação / configuração</a>
+        </li>
+        <li>
+          <a href="#principaisComandos">Principais comandos do Git / Explicação</a>
+        </li>
+        <li>
+          <a href="#commitErrado">Como arrumar uma mensagem errada de um commit?</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article id="controleDeVersao">
+      <h2>O que é controle de versão?</h2>
+      <p>Controle de versão é um sistema que registra alterações em um arquivo ou conjunto de arquivos ao longo do tempo para que você possa lembrar versões específicas mais tarde. Para os exemplos neste livro você irá utilizar o código-fonte de software com arquivos que possuam controle de versão, embora na realidade você possa fazer isso com quase qualquer tipo de arquivo em um computador.</p>
+      <ul class="referencia">
+        <li><a href="https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Sobre-Controle-de-Vers%C3%A3o" target="_blank">Referência: Documentação GIT</a></li>  
+      </ul>
+    </article>
+    <article id="git">
+      <h2>O que é o Git?</h2>
+      <p>O Git é um sistema open-source de controle de versão utilizado pela grande maioria dos desenvolvedores atualmente. Com ele podemos criar todo histórico de alterações no código do nosso projeto e facilmente voltar para qualquer ponto para saber como o código estava naquela data.</p>
+      <p>Além disso, o Git nos ajuda muito a controlar o fluxo de novas funcionalidades entre vários desenvolvedores no mesmo projeto com ferramentas para análise e resolução de conflitos quando o mesmo arquivo é editado por mais de uma pessoa em funcionalidades diferentes.</p>
+      <ul class="referencia">
+        <li><a href="https://blog.rocketseat.com.br/iniciando-com-git-github/" target="_blank">Referência: Blog Rocketseat</a></li>  
+      </ul>
+    </article>
+    <article id="gitHub">
+      <h2>O que é o GitHub?</h2>
+      <figure class="img-center">
+        <img src="./assets/images/gitHub.png" alt="Ilustração logo do GitHub, um gato preto">
+      </figure>
+      <p>O GitHub é uma rede social de desenvolvedores. A primeira parte do nome, “Git”, é por causa da utilização do sistema de controle de versão e a segunda parte, “Hub”, tem a ver com a conexão entre profissionais de programação de qualquer lugar do mundo.</p>
+      <p>Inclusive, o GitHub é uma das maiores plataformas online de trabalho colaborativo do mundo. Aqui os usuários compartilham seus projetos, e pessoas de qualquer lugar do mundo podem trabalhar paralelamente neles.</p>
+      <ul class="referencia">
+        <li><a href="https://rockcontent.com/blog/o-que-e-github/" target="_blank">Referência: Rockcontent</a></li>  
+      </ul>
+    </article>
+    <article id="gitLab">
+      <h2>O que é o GitLab?</h2>
+      <figure class="img-center">
+        <img src="./assets/images/gitLab.png" alt="Ilustração logo do GitLab, face de uma raposa isométrica">
+      </figure>
+      <p>O GitLab é uma plataforma de gerenciamento e operações de software de ponta a ponta. Com ele, é possível controlar problemas e gerenciar códigos-fonte, monitoramento o andamento de tarefas por meio de listas e cards, automatizar processos como testes e publicação de aplicações, além da possibilidade de criar repositórios de código privados.</p>
+      <ul class="referencia">
+        <li><a href="https://introduceti.com.br/blog/git-github-e-gitlab-o-que-sao-e-qual-quais-os-ambientes-de-produtividade-da-programacao/">Referencia: Introduce</a></li>
+      </ul>
+    </article>
+    <article id="criarConta">
+      <h2>Como criar uma conta no GitHub?</h2>
+      <p>
+        Clique no link para ser redirecionado ao tutorial de criação de conta do Git Hub <a href="./pages/criar-conta-git-hub.html">Criar conta no Git Hub</a>
+      </p>
+    </article>
+    <article id="gitInstalacaoLinux">
+      <h2>Como é a instalação do git no Linux:</h2>
+      <figure class="img-center">
+        <img src="./assets/images/linux_debian.png" alt="Ilustração logo do Git Hub e logo do Debian">
+      </figure>
+      <p>
+        Para usuários Debian/Ubuntu (apt-get):
+      </p>
+      <p>Abra o terminal e execute os seguintes comandos:</p>
+      <ol class="lista-tutorial-linux">
+        <li>
+          Sudo apt-get update;
+        </li>
+        <li>
+          Sudo apt-get install git;
+        </li>
+        <li>
+          Verifique se a instalação ocorreu com sucesso usando git --version;
+        </li>
+        <li>
+          Execute os seguintes comandos no terminal para configurar seu e-mail e nome de usuário que serão associados à sua conta GIT:
+          <ul>
+            <li>
+              git config --global user.name "Jhon Snow"; 
+            </li>
+            <li>
+              git config --global user.email "exemplo@seuemail.com.br";
+            </li>
+          </ul>
+        </li>
+      </ol>
+      <p class="texto-obs">Nota: Lembre-se de substituir Jhon Snow e exemplo@seuemail.com.br com seus dados. Qualquer commit criado posteriormente será associado à esses dados.</p>
+    </article>
+    <article id="principaisComandos">
+      <h2>Principais comandos:</h2>
+      <ul class="lista-tutorial-linux">
+        <h3>Comuns:</h3>
+        <li>
+          <h3>Para inicializar um repositório:</h3>
+          <code>git init</code>
+        </li>
+        <li>
+          <h3>Para obter o status do repositório:</h3>
+          <code>git status</code>
+        </li>
+        <li>
+          <h3>Para adicionar e commitar:</h3>
+          <code>
+            git add . <br>
+            git commit -m "mensagem"
+          </code>
+        </li>
+        <h3>Remotos:</h3>
+        <li>
+          <h3>Para puxar (trazer) o histórico do servidor remoto:</h3>
+          <code>git pull origin nome-do-branch</code>
+        </li>
+        <li>
+          <h3>Para empurrar (enviar) o histórico do servidor remoto:</h3>
+          <code>git push origin nome-do-branch</code>
+        </li>
+        <li>
+          <h3>Para listar branchs</h3>
+          <code>git branch</code>
+        </li>
+        <li>
+          <h3>Para trocar, alternar de branch:</h3>
+          <code>git checkout nome-do-branch</code>
+        </li>
+        <li>
+          <h3>Para criar um branch e selecioná-lo:</h3>
+          <code>
+            git branch nome-do-branch <br>
+            git checkout nome-do-branch
+          </code>
+        </li>
+        <li>
+          <h3>Para deletar um branch local:</h3>
+          <code>git branch -d nome-do-branch</code>
+        </li>
+        <li>
+          <h3>Para deletar um branch remoto</h3>
+          <code>git push origin :nome-do-branch</code>
+        </li>
+        <h3>Merge:</h3>
+        <li>
+          <h3>Para fazer um merge</h3>
+          <code>git merge nome-do-branch</code>
+        </li>
+      </ul>
+      <ul class="referencia">
+        <li>
+          <a href="http://devfuria.com.br/git/resumo/">Referencia: devfuria</a>
+        </li>
+      </ul>
+      <hr>
+      <h2>O que é git pull?</h2>
+      <p><code>git pull</code> verifica mudanças de um repositório e faz a atualização de diretamente para o branch local.</p>
+      <h2>O que são branches?</h2>
+      <p>"Branches" são uma instancia isolada do reposítório atual, ela permite que você faça modificações no código sem alterar diretamente o repositório mestre. Tornando possível o envio das alterações posteriormente</p>
+    </article>
+    <article id="commitErrado">
+      <h2>Como arrumar uma mensagem errada em um commit?</h2>
+      <p>O comando <code>git commit --amend</code> torna possível a edição do ultimo commit local realizado.</p>
+      <p>Para modificar commits mais antigos ou vários commits, você pode usar git rebase para combinar uma sequência de commits em um novo commit base. No modo padrão, git rebase permite que você reescreva o histórico — aplicando os commits em seu branch de trabalho atual ao head do branch. Como seus novos commits vão substituir os antigos, é importante não usar git rebase nos commits públicos ou vai parecer que o histórico do seu projeto desapareceu.</p>
+      <ul class="referencia">
+        <li><a href="https://www.atlassian.com/br/git/tutorials/rewriting-history">Referencia: Atrlassian - Bitbucket</a></li>
+      </ul>
+    </article>
+  </main>
+  <footer></footer>
+</body>
+
+</html>
