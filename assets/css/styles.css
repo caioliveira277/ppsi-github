@@ -30,7 +30,21 @@ nav {
   position: fixed;
   background: #2e2e2e;
   padding-left: 10px;
-  max-width: 332px;
+  width: 332px;
+  overflow: hidden;
+  transition: 300ms ease;
+}
+.titulo-list {
+  color: #ffffff;
+  font-size: 22px;
+}
+@media screen and (max-width: 1500px) {
+  nav {
+    height: 50px;
+  }
+  nav:hover {
+    height: auto;
+  }
 }
 nav ul {
   list-style: none;
