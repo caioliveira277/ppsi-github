@@ -81,7 +81,8 @@ article .referencia {
   height: auto;
 }
 
-.lista-tutorial-linux{
+.lista-tutorial-linux,
+.lista-tutorial-windows {
   font-size: 20px;
   background: #f5f5f5;
   padding: 10px 5px 10px 46px;
@@ -89,15 +90,24 @@ article .referencia {
   color: #2e2e2e;
   margin-left: 15px;
 }
-.lista-tutorial-linux li {
+.lista-tutorial-linux li,
+.lista-tutorial-windows li {
   margin: 10px 0;
 }
+.lista-tutorial-linux ul,
 .lista-tutorial-linux ul {
   margin-left: 20px;
 }
 .texto-obs {
   font-size: 16px;
   color: #de4c36;
+}
+.margin-h3 {
+  margin: 20px 5px;
+}
+.img-center {
+  margin: 0 auto;
+  display: block;
 }
 figure figcaption {
   text-align: end;
