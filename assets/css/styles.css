@@ -69,7 +69,10 @@ main {
 main section {
   font: normal 24px "Roboto";
 }
-
+.voltar-home {
+  font-size: 24px;
+  font-weight: 400;
+}
 article {
   margin: 160px 0px;
 }
