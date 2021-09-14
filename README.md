@@ -1,5 +1,5 @@
 # Projeto Acessibilidade 👍
-## Projeto de PPSI 3° semestre - ***FATEC SR***
+## Projeto de PPSI 2° semestre - ***FATEC SR***
 
 <br>
 <p float="left">
