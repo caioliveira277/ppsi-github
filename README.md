@@ -15,7 +15,7 @@ Desenvolver um site em forma de artigo para explicar o GIT e diferentes formas d
 ---
 ## Links: 🌐
 ***Projeto online:***<br>
-[<ins>Link do projeto</ins>](https://caioliveira277.github.io/ppsi_github/)
+[<ins>Link do projeto</ins>](https://caioliveira277.github.io/ppsi-github/)
 
 ---
 ## Licença
